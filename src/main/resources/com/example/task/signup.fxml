@@ -6,18 +6,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.signupController">
     <children>
-        <AnchorPane layoutX="231.0" prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #6495ed; -fx-opacity: ;">
+        <AnchorPane layoutX="231.0" prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #170b35; -fx-opacity: ;">
          <children>
             <Button fx:id="loginButton" layoutX="118.0" layoutY="267.0" mnemonicParsing="false" onAction="#onloginButtonClick" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #1584D1; -fx-background-radius: 10;" text="LOGIN" textFill="WHITE">
                <font>
                   <Font name="Bodoni MT Black" size="20.0" />
                </font>
             </Button>
+            <Text fill="WHITE" layoutX="17.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;WELL BEGUN IS HALF DONE&quot;">
+               <font>
+                  <Font name="Bernard MT Condensed" size="35.0" />
+               </font>
+            </Text>
          </children></AnchorPane>
-        <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #AEDBFF;">
+        <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: black;">
             <children>
                 <TextField fx:id="usermailTextField" layoutX="40.0" layoutY="176.0" promptText="Email">
                     <font>
@@ -27,7 +33,7 @@
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                     </font></PasswordField>
-                <Button fx:id="signupButton" layoutX="46.0" layoutY="264.0" mnemonicParsing="false" onAction="#onsignupButtonClick" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #323633; -fx-background-radius: 10;" text="SIGNUP" textFill="WHITE">
+                <Button fx:id="signupButton" layoutX="46.0" layoutY="264.0" mnemonicParsing="false" onAction="#onsignupButtonClick" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="SIGNUP" textFill="#200000">
                     <font>
                         <Font name="Bodoni MT Black" size="20.0" />
                     </font>

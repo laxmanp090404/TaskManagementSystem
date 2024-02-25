@@ -7,10 +7,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="401.0" prefWidth="692.0" style="-fx-background-color: #BA55D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.loginController">
-   <AnchorPane layoutX="-3.0" prefHeight="422.0" prefWidth="233.0" style="-fx-background-color: #d5d5d5;" />
-    <Label fx:id="welcomeText" layoutX="294.0" layoutY="39.0" style="-fx-font-size: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="NEVER">
+<AnchorPane prefHeight="422.0" prefWidth="692.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.loginController">
+   <AnchorPane layoutX="-3.0" prefHeight="422.0" prefWidth="400.0" style="-fx-background-color: #170B35;">
+      <children>
+      
+        <Label layoutX="115.0" layoutY="265.0" style="-fx-font-size:16;" text="Don't have an account?" textFill="WHITE">
+        </Label>
+        <Button fx:id="loginButton" layoutX="172.0" layoutY="307.0" maxHeight="20" maxWidth="60" onAction="#onSignUpButtonClick" style="-fx-font-size: 12; -fx-background-color: #5865F2; -fx-background-radius: 20;" text="SignUp" textFill="WHITE" />
+         <Text fill="WHITE" layoutX="31.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;WELCOME TO THE WORLD OF CONSISTENCY..&quot;" textAlignment="CENTER" wrappingWidth="312.81951904296875">
+            <font>
+               <Font name="Berlin Sans FB Bold" size="30.0" />
+            </font>
+         </Text>
+      </children></AnchorPane>
+    <Label fx:id="welcomeText" layoutX="294.0" layoutY="39.0" style="-fx-font-size: 25;" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="NEVER">
         <padding>
             <Insets bottom="0" left="30" right="0" top="20" />
         </padding>
@@ -33,16 +46,19 @@
         <VBox.margin>
             <Insets left="30" top="25" />
         </VBox.margin><HBox alignment="CENTER_LEFT" spacing="5" xmlns:fx="http://javafx.com/fxml" /> </VBox>
-
-  <Label layoutX="25.0" layoutY="262.0" style="-fx-font-size:16;" text="Don't have an account?">
-        </Label>
-  <Button fx:id="loginButton" layoutX="87.0" layoutY="303.0" maxHeight="20" maxWidth="60" onAction="#onSignUpButtonClick" style="-fx-font-size: 12; -fx-background-color: #5865F2; -fx-background-radius: 20;" text="SignUp" textFill="WHITE" />
-     <Button fx:id="signupButton" layoutX="503.0" layoutY="333.0" maxHeight="40" maxWidth="200" onAction="#onloginButtonClick" prefHeight="26.0" prefWidth="66.0" style="-fx-font-size: 12; -fx-background-color: black; -fx-background-radius: 20;" text="Login" textFill="WHITE" />
-     <Label layoutX="390.0" layoutY="249.0" style="-fx-font-size:16;" text="Password:" textFill="WHITE" />
-     <TextField fx:id="usermailTextField" layoutX="475.0" layoutY="177.0" maxWidth="200" />
-     <TextField fx:id="passwordTextField" layoutX="482.0" layoutY="248.0" maxWidth="200">
+     <Button fx:id="signupButton" layoutX="521.0" layoutY="297.0" maxHeight="40" maxWidth="200" onAction="#onloginButtonClick" prefHeight="37.0" prefWidth="83.0" style="-fx-font-size: 12; -fx-background-color: WHITE; -fx-background-radius: 10;" text="Login">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+     <TextField fx:id="usermailTextField" layoutX="488.0" layoutY="146.0" maxWidth="200" prefHeight="26.0" prefWidth="150.0" promptText="Useremail" />
+     <TextField fx:id="passwordTextField" layoutX="488.0" layoutY="224.0" maxWidth="200" prefHeight="14.0" prefWidth="150.0" promptText="Password">
          <padding>
              <Insets bottom="10" left="0" right="0" top="0" />
          </padding> </TextField>
-     <Label layoutX="393.0" layoutY="177.0" style="-fx-font-size:16;" text="Usermail:" textFill="WHITE" />
+     <Label layoutX="401.0" layoutY="147.0" style="-fx-font-size:16;" textFill="WHITE" />
+   <Text fill="WHITE" layoutX="515.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+      <font>
+         <Font name="Berlin Sans FB Bold" size="30.0" />
+      </font>
+   </Text>
 </AnchorPane>
