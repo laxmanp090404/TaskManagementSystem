@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.signupController">
+    <children>
+        <AnchorPane layoutX="231.0" prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #6495ed; -fx-opacity: ;">
+         <children>
+            <Button fx:id="loginButton" layoutX="118.0" layoutY="267.0" mnemonicParsing="false" onAction="#onloginButtonClick" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #1584D1; -fx-background-radius: 10;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #AEDBFF;">
+            <children>
+                <TextField fx:id="usermailTextField" layoutX="40.0" layoutY="176.0" promptText="Email">
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                    </font></TextField>
+                <PasswordField fx:id="passwordTextField" layoutX="40.0" layoutY="213.0" promptText="Password">
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                    </font></PasswordField>
+                <Button fx:id="signupButton" layoutX="46.0" layoutY="264.0" mnemonicParsing="false" onAction="#onsignupButtonClick" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #323633; -fx-background-radius: 10;" text="SIGNUP" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Black" size="20.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="usernameTextField" layoutX="40.0" layoutY="141.0" promptText="Username">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label fx:id="welcomeText" layoutX="85.0" layoutY="75.0" text="L" textFill="#4603ff" />
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="404.0" prefWidth="603.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.menuController">
+   <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="404.0" prefWidth="324.0" style="-fx-background-color: #545aa7;">
+      <children>
+         <AnchorPane layoutX="197.0" layoutY="54.0" />
+          <Label layoutX="218.0" layoutY="54.0" prefHeight="90.0" prefWidth="138.0" style="-fx-font-size:28;" text="HOME" textFill="WHITE">
+              <padding>
+                  <Insets bottom="20" left="30" right="0" top="30" />
+              </padding>
+          </Label>
+         <Button fx:id="logout" layoutX="8.0" layoutY="41.0" mnemonicParsing="false" onAction="#onLogOutClick" style="-fx-background-color: #ff0000;" text="LOGOUT" textFill="WHITE" />
+      </children>
+   </AnchorPane>
+
+
+    <Label fx:id="welcomeText" layoutX="56.0" layoutY="14.0" style="-fx-font-size: 25;" text="WELCOME TO TASK MANAGEMENT APP" textFill="WHITE" VBox.vgrow="NEVER">
+        <padding>
+            <Insets bottom="0" left="20" right="0" top="20" />
+        </padding>
+      <font>
+         <Font name="Bodoni MT Black" size="12.0" />
+      </font>
+    </Label>
+     <Button fx:id="myeventButton" layoutX="456.0" layoutY="259.0" maxHeight="40" maxWidth="200" onAction="#onmyeventsController" style="-fx-font-size: 16; -fx-background-radius: 20; -fx-background-color: #1584D1;" text="My Tasks" textFill="WHITE">
+        </Button>
+     <Button fx:id="alterButton" layoutX="247.0" layoutY="259.0" maxHeight="40" maxWidth="200" onAction="#ondelButtonClick" style="-fx-font-size: 16; -fx-background-color: #F62817; -fx-background-radius: 20;" text="Delete Task" textFill="WHITE">
+        </Button>
+     <Button fx:id="regButton" layoutX="56.0" layoutY="259.0" maxHeight="40" maxWidth="200" onAction="#onregController" style="-fx-font-size: 16; -fx-background-color: #4CC417; -fx-background-radius: 20;" text="Add Task" textFill="WHITE">
+        </Button>
+
+</AnchorPane>

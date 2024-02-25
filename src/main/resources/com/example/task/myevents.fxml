@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="439.0" prefWidth="600.0" style="-fx-background-color: #6A5ACD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.myeventsController">
+   <AnchorPane layoutX="282.0" layoutY="-1.0" prefHeight="439.0" prefWidth="320.0" style="-fx-background-color: lightgrey;" />
+    <HBox alignment="CENTER_LEFT" spacing="5">
+        <Label style="-fx-font-size:16;">
+            <padding>
+                <Insets left="30" top="20" />
+            </padding> </Label>
+    </HBox>
+    <Label fx:id="welcomeText" layoutX="218.0" layoutY="17.0" prefHeight="58.0" prefWidth="226.0" style="-fx-font-size: 25; -fx-background-color: yuzsefszdh;" textAlignment="CENTER" VBox.vgrow="NEVER">
+        <padding>
+            <Insets bottom="10" left="30" right="0" top="10" />
+        </padding>
+      <font>
+         <Font name="Berlin Sans FB Demi Bold" size="54.0" />
+      </font>
+    </Label>
+    <TableView fx:id="EventsTable" layoutX="34.0" layoutY="99.0" prefHeight="325.0" prefWidth="532.0">
+        <columns>
+            <TableColumn fx:id="tnameColumn" prefWidth="117.60003662109375" text="TASK NAME" />
+            <TableColumn fx:id="tidColumn" prefWidth="65.5999755859375" text="TASK NO" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="114.39996337890625" text="DESCRIPTION" />
+            <TableColumn fx:id="deadlineColumn" prefWidth="103.199951171875" text="DEADLINE" />
+            <TableColumn fx:id="statusColumn" prefWidth="132.800048828125" text="STATUS" />
+        </columns>
+    </TableView>
+     <Button fx:id="homebutton" layoutX="34.0" layoutY="45.0" maxHeight="20" maxWidth="60" onAction="#onmenuButtonClick" style="-fx-font-size: 12; -fx-background-color: #ff0000;" text="HOME" textFill="WHITE" />
+   <Text fill="#ffc4c4" layoutX="218.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY">
+      <font>
+         <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+      </font>
+   </Text>
+   <Text layoutX="288.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENTS">
+      <font>
+         <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+      </font>
+   </Text>
+</AnchorPane>
